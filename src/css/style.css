@@ -9,7 +9,7 @@ body{
 }
 header{
     height: 100vh;
-    background-image: url(/src/img/mainbackground.jpg);
+    background-image: url("../img/mainbackground.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -118,10 +118,10 @@ main{
     width: 100%;
 }
 #db1{
-    background-image: url(/src/img/promotionbanner1.jpg);
+    background-image: url("../img/promotionbanner1.jpg");
 }
 #db2{
-    background-image: url(/src/img/promotionbanner2.jpg);
+    background-image: url("../img/promotionbanner2.jpg");
 }
 #services{
     display: grid;
