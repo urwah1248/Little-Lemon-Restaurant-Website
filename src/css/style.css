@@ -79,44 +79,6 @@ a, a:hover{
 .flex{
     display: flex;
 }
-
-
-.card{
-    background-color: rgb(39, 39, 39);
-    color: 	hwb(19 58% 0% / 0.698);
-    padding: 20px;
-}
-.card-icon{
-    width: 50px;
-}
-.cardbutton{
-    background-color: hwb(19 58% 0% / 0.698);
-    width: 50%;
-    height: 15%;
-    font-size: 15px;
-    font-weight: 800;
-    color: rgb(39, 39, 39);
-    border-radius: 15px;
-    border: none;
-}
-.cardbutton:hover{
-    border: solid 3px hwb(19 58% 0% / 0.698);
-    background-color: black;
-    color: hwb(19 58% 0% / 0.698);
-    transform: scale(120%);
-    transition: 250ms;
-}
-.cardbutton:not(hover){
-    transition: 250ms;
-}
-.footerlink{
-    color: hwb(19 58% 0% / 0.698);
-}
-.footerlink:hover{
-    color: hwb(19 58% 0% / 0.698);
-    text-decoration: underline;
-}
-
 footer{
     background-color: rgb(39, 39, 39);
     color: hwb(19 58% 0% / 0.698);
@@ -126,6 +88,30 @@ footer{
     justify-content: space-evenly;
     padding: 20px;
 }
+.footerlink{
+    color: hwb(19 58% 0% / 0.698);
+}
+.footerlink:hover{
+    color: hwb(19 58% 0% / 0.698);
+    text-decoration: underline;
+}
+
+
 .text-center{
     text-align: center;
+}
+
+@media(max-width: 768px) {
+    nav{
+        display: none;
+    }
+    #logo{
+        display: block;
+        margin: 0 auto;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }

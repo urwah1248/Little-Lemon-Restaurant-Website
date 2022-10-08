@@ -68,3 +68,60 @@ main{
     display: flex;
     align-items: center;
 }
+.card{
+    background-color: rgb(39, 39, 39);
+    color: 	hwb(19 58% 0% / 0.698);
+    padding: 20px;
+}
+.card-icon{
+    width: 50px;
+}
+.cardbutton{
+    background-color: hwb(19 58% 0% / 0.698);
+    width: 50%;
+    height: 15%;
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(39, 39, 39);
+    border-radius: 15px;
+    border: none;
+}
+.cardbutton:hover{
+    border: solid 3px hwb(19 58% 0% / 0.698);
+    background-color: black;
+    color: hwb(19 58% 0% / 0.698);
+    transform: scale(120%);
+    transition: 250ms;
+}
+.cardbutton:not(hover){
+    transition: 250ms;
+}
+
+@media(max-width: 768px) {
+    #banner{
+        display: none;
+    }
+    header{
+        height: fit-content;
+    }
+    main{
+        display: grid;
+        grid-template-rows: auto;
+    }
+    #promotions{
+        height: fit-content;
+        display: block;
+    }
+    #promotions div{
+        width: 100%;
+    }  
+    #services{
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+    #location{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row: 50% 50%;
+    }
+}
