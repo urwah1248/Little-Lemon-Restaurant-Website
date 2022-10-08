@@ -6,12 +6,9 @@
 }
 body{
     font-family: 'Alkalami', 'serif', 'Open Sans', 'sans-serif';
-}
-header{
-    height: 100vh;
     background-image: url("../img/mainbackground.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+    backdrop-filter: blur(10px);
+    padding-bottom: 20px;
 }
 .header{
     padding: 10px 5%;
@@ -25,8 +22,10 @@ nav{
     align-items: center;
     width: 50%;
 }
-nav ul{
+ul{
     list-style: none;
+}
+nav ul{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -41,14 +40,16 @@ a, a:hover{
 }
 .navitem{
     margin-bottom: 0;
-    padding-top: 6px;
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
 
     align-items: center;
     border: solid 5px black;
-    line-height: 50px;
+    line-height: 40px;
     border-radius: 80px;
+
+    user-select: none;
 }
 .navitem:hover, .active{
     background-color: aliceblue;
@@ -56,11 +57,9 @@ a, a:hover{
     transform: translateY(10px);
     transition: 250ms;
 }
-/* 
-.active{
-    position: sticky;
-    transform: translateY(10px);
-} */
+.active, .active *{
+    cursor:default;
+}
 .navitem:not(hover){
     transition: 250ms;
 }
@@ -73,62 +72,15 @@ a, a:hover{
     transition: 250ms;
 }
 .logo:hover{
-    width: 200px;
+    transform: scale(120%);
     transition: 250ms;
     background-color: white;
-}
-.visitingbanner{
-    width: 50%;
-    margin: 0 auto;
-}
-#banner{
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    backdrop-filter: blur(20px);
-    border-radius: 90px;
 }
 .flex{
     display: flex;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50vh 50vh 50vh;
-    margin: 20px 5%;
-    gap: 20px;
-}
-#promotions{
-    display: flex;
-    flex-wrap: wrap;
-}
-#promotions div{
-    height: 100%;
-    width: 50%;
-    text-align: center;
-    display: flex;
-    align-items: center ;
-    color: white;
-    font-size: 20px;
-    background-size: cover;
-    text-shadow: 3px 3px 10px black;
-}
-#promotions h1{
-    width: 100%;
-}
-#db1{
-    background-image: url("../img/promotionbanner1.jpg");
-}
-#db2{
-    background-image: url("../img/promotionbanner2.jpg");
-}
-#services{
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
-    justify-content: space-evenly;
-    text-align: center;
-}
+
 .card{
     background-color: rgb(39, 39, 39);
     color: 	hwb(19 58% 0% / 0.698);
@@ -137,24 +89,43 @@ main{
 .card-icon{
     width: 50px;
 }
-#location{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: rgb(39, 39, 39);
-    color: 	hwb(19 58% 0% / 0.698);
+.cardbutton{
+    background-color: hwb(19 58% 0% / 0.698);
+    width: 50%;
+    height: 15%;
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(39, 39, 39);
+    border-radius: 15px;
+    border: none;
 }
-#map{
-    width: 100%;
-    height: 100%;
+.cardbutton:hover{
+    border: solid 3px hwb(19 58% 0% / 0.698);
+    background-color: black;
+    color: hwb(19 58% 0% / 0.698);
+    transform: scale(120%);
+    transition: 250ms;
 }
-#address{
-    margin: 20px;
-    display: flex;
-    align-items: center;
+.cardbutton:not(hover){
+    transition: 250ms;
 }
+.footerlink{
+    color: hwb(19 58% 0% / 0.698);
+}
+.footerlink:hover{
+    color: hwb(19 58% 0% / 0.698);
+    text-decoration: underline;
+}
+
 footer{
-    display: flex;
-    padding: 10px 0;
-    margin: 0 5%;
-    justify-content: space-between;
+    background-color: rgb(39, 39, 39);
+    color: hwb(19 58% 0% / 0.698);
+    margin: 10px 5%;
+    display: grid;
+    grid-template-columns: 50% 15% 25%;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.text-center{
+    text-align: center;
 }

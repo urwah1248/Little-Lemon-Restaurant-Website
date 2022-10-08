@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu | Little Lemon</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/contact.css">
+    <link rel="stylesheet" href="/src/css/thankyou.css">
 </head>
 <body>
     <header>
@@ -19,56 +19,16 @@
                     <li class="navitem"><a href="/index.html" >Home</a></li>
                     <li class="navitem"><a href="/src/pages/menu.html">Menu</a></li>
                     <li class="navitem"><a href="/src/pages/about.html">About</a></li>
-                    <li class="navitem active"><a>Contact</a></li>
+                    <li class="navitem"><a href="/src/pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="contact">
-            <h1 class="text-center">Contact Us</h1>
-            <form action="/src/pages/thankyou.html">
-                <div class="input">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your full name" required>
-                </div>
-                
-                <div class="input">
-                    <label for="reason">Reason for Contacting</label>
-                    <select name="reason" id="reason" required>
-                        <option disabled selected value="0">Select your reason</option>
-                        <option value="1">Customer Feedback</option>
-                        <option value="2">Book A Table</option>
-                        <option value="3">Other</option>
-                    </select>
-                </div>
-
-                <div class="input">
-                    <label for="email">Your Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
-                </div>
-
-                <div class="input">
-                    <label for="phone">Your Phone Number</label>
-                    <input type="number" name="phone" id="phone" placeholder="Enter your Phone number" required>
-                </div>
-
-                <div class="input">
-                    <label for="message">Your Message for us</label>
-                    <textarea type="text" name="message" id="message" placeholder="Enter Your Message" required></textarea>
-                </div>
-
-                <div class="labeldiv">
-                    <label for="offers" id="offerslabel">
-                        I would like to receive offers on my email
-                        <input type="checkbox" name="offers" id="offers">
-                    </label>
-                    
-                </div>
-
-                <input type="submit" value="Submit">
-            </form>
+        <div class="thankyou">
+            <h1>Thank you for Contacting Us</h1>
+            <h2>We'll be replying you as soon as possible.</h2>
         </div>
     </main>
 
